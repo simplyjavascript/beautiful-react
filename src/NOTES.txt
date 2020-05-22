@@ -1,0 +1,86 @@
+
+/***** Outer wrapper for App.js ************/
+
+<div className="header_wrapper appRoot">
+   <div className="container">
+   </div>   
+</div>
+ 
+/******** Header section ***************/
+    
+<div className="header_logo">
+    <i className="fa fa-film fa-3x"></i>
+    <span className="logo_text"> Black & White Frames</span>
+</div>
+<div className="divider div-transparent div-dot"></div>
+
+
+
+/******* Navbar section ****************/
+
+<nav className="navbar">
+    <ul>
+    <li className="active">
+        <a href="#">
+        <i className="nav_icons fa fa-home fa-2x"></i>
+        <span className="nav_text">Home</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+        <i className="nav_icons fa fa-camera fa-2x"></i>
+        <span className="nav_text">Gallery</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+        <i className="nav_icons fa fa-envelope-o fa-2x"></i>
+        <span className="nav_text">FAQ</span>
+        </a>
+    </li>
+    <li>
+        <button>
+        {/* fa-sun-o */}
+        <i className="fa fa-moon-o fa-2x"></i>        
+        </button>
+    </li>
+    </ul>
+</nav>
+
+/****** BlockQuotes ****************/
+
+<blockquote className="quotes">
+    The best thing about a picture is that it never changes, even when the
+    people in it do.
+</blockquote>
+
+/********** Cameras ****************/
+
+<div className="cameras_wrapper">
+    <h3> Popular Cameras</h3>
+    <ul className="cameras_list">
+    <li>
+        <span className="icon_image">
+        <i className="fa fa-camera"></i>
+        </span>
+        <div className="camera_details">
+        <p>
+            <span className="desc"> Model: </span> Fujifilm X-T200{" "}
+        </p>
+        <p>
+            <span className="desc">Price:</span> 479$
+        </p>
+        <p>
+            <span className="desc">Rating:</span> 5
+        </p>
+        </div>
+    </li>
+    </ul>
+</div>
+
+cameras: [
+    { id: 1, name: "Nikon", rating: 5, price: 479 },
+    { id: 2, name: "Canon", rating: 4, price: 299 },
+    { id: 3, name: "FujiFilm", rating: 4.5, price: 350 },
+    { id: 4, name: "Sony", rating: 3, price: 179 }
+]
